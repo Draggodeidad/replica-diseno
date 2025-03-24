@@ -1,4 +1,4 @@
-import "./styles/navbar.css";
+import "../styles/navbar.css";
 
 export default function NavBar() {
   return (
@@ -6,10 +6,7 @@ export default function NavBar() {
       <ul>
         <li className="logo">
           <a href="/"></a>
-          <img
-            src="https://th.bing.com/th/id/R.dd4589b9894de6fd98393fa5c59de0fe?rik=uXLprVciJCZxOg&pid=ImgRaw&r=0"
-            alt="Logo"
-          />
+          <img src="/assets/navbarLogo.png" alt="Logo" />
         </li>
         <li>
           <a href="/">Main</a>

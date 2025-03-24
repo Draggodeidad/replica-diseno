@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/footer.css";
+import "../styles/footer.css";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -26,15 +26,10 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="logoSection">
-          <div className="logo">
-            <Link href="/">
-              <img
-                width="145"
-                height="94"
-                src="https://th.bing.com/th/id/R.dd4589b9894de6fd98393fa5c59de0fe?rik=uXLprVciJCZxOg&pid=ImgRaw&r=0"
-                alt="Logo"
-              />
-            </Link>
+          <div className="">
+            <a href="/">
+              <img width="145" src="assets/footerLogo.png" alt="Logo" />
+            </a>
           </div>
         </div>
 
