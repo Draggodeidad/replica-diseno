@@ -72,10 +72,6 @@ nav a::before {
   bottom: 25px; /* Primera línea */
 }
 
-nav a::after {
-  bottom: -5px; /* Segunda línea */
-}
-
 nav a:hover::before,
 nav a:hover::after {
   width: 100%;

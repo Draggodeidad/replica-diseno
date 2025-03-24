@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Footer from "./footer";
-import NavBar from "./navBar";
+import Footer from "./pages/footer";
+import NavBar from "./pages/navBar";
 export default function Home() {
   return (
     <div className={styles.page}>
