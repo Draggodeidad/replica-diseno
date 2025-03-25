@@ -1,27 +1,28 @@
 import "../styles/navbar.css";
+import Link from "next/link";
 
 export default function NavBar() {
   return (
     <nav className="navbar">
       <ul>
         <li className="logo">
-          <a href="/"></a>
+          <Link href="/"></Link>
           <img src="/assets/navbarLogo.png" alt="Logo" />
         </li>
         <li>
-          <a href="/">Main</a>
+          <Link href="/">Main</Link>
         </li>
         <li>
-          <a href="/">Galery</a>
+          <Link href="/galery">Galery</Link>
         </li>
         <li>
-          <a href="/">Proyects</a>
+          <Link href="/proyects">Proyects</Link>
         </li>
         <li>
-          <a href="/">Certifications</a>
+          <Link href="/certifications">Certifications</Link>
         </li>
         <li>
-          <a href="/">Contact Us</a>
+          <Link href="/contactUs">Contact Us</Link>
         </li>
       </ul>
     </nav>

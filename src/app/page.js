@@ -1,13 +1,12 @@
-import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
-import Footer from "./pages/footer";
-import NavBar from "./pages/navBar";
+
 export default function Home() {
   return (
     <div className={styles.page}>
-      <NavBar />
-      <main></main>
-      <Footer />
+      <main>
+        <h1>Home</h1>
+      </main>
     </div>
   );
 }
