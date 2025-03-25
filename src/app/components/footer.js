@@ -36,13 +36,17 @@ export default function Footer() {
         <div className="infoSection">
           <h3>Information</h3>
           <ul>
-            {["Main", "Gallery", "Projects", "Certifications", "Contacts"].map(
-              (item) => (
-                <li key={item}>
-                  <Link href={`/${item.toLowerCase()}`}>{item}</Link>
-                </li>
-              )
-            )}
+            {[
+              { name: "Main", path: "/" },
+              { name: "Gallery", path: "/galery" },
+              { name: "Projects", path: "/proyects" },
+              { name: "Certifications", path: "/certifications" },
+              { name: "Contact Us", path: "/contactUs" },
+            ].map((item) => (
+              <li key={item.name}>
+                <Link href={item.path}>{item.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
 
