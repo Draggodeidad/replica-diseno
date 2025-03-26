@@ -24,6 +24,7 @@ export default function Home() {
           </div> */}
         </div>
       </div>
+      {/* HOlaa mundo */}
 
       <div className={styles.about}>
         <div className={styles.aboutImages}>
