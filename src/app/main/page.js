@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./page.module.css";
+import styles from "./main.module.css";
 
-export default function Home() {
+export default function Main() {
   return (
     <div className={styles.page}>
       <div className={styles.intro}>
@@ -17,11 +17,11 @@ export default function Home() {
             width={770}
             height={710}
           />
-          {/* <div className={styles.button}>
+          <div className={styles.button}>
             <Link href="/projects" className={styles.viewPro}>
               VIEW PROJECT <span className={styles.arrow}>→</span>
             </Link>
-          </div> */}
+          </div>
         </div>
       </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged.
           </p>
-          <Link href="/" className={styles.readMore}>
+          <Link href="/about" className={styles.readMore}>
             READ MORE <span className={styles.arrow}>→</span>
           </Link>
         </div>
@@ -181,19 +181,14 @@ export default function Home() {
                 placeholder="Message *"
               ></textarea>
             </form>
-            <Link href="/" className={styles.allprojects}>
+            <Link href="/projects" className={styles.allprojects}>
               SEND EMAIL <span className={styles.arrow}>→</span>
             </Link>
           </section>
 
           {/* Imagen */}
           <section className={styles.contactImg}>
-            <Image
-              src="/assets/image12.png"
-              alt="contact"
-              width={570}
-              height={255}
-            />
+            <Image src="/contact.jpg" alt="contact" width={570} height={255} />
           </section>
         </div>
       </div>

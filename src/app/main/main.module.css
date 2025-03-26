@@ -1,0 +1,337 @@
+.page {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title {
+  font-size: 30px;
+  margin-right: 70px;
+  align-self: center;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.viewPro {
+  color: #000;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-align: start;
+}
+
+.button {
+  background-color: #fff;
+  text-decoration: none;
+  position: absolute;
+  width: 221px;
+  height: 71px;
+  bottom: 32px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4rem;
+  gap: 4rem;
+  background-color: #f8f8f8;
+}
+
+.aboutImages {
+  display: flex;
+  gap: 2rem;
+  flex: 1.5;
+}
+
+.leftImages {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.leftImages img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.rightImage {
+  flex: 1.5;
+  height: 100%;
+}
+
+.aboutContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.aboutContent h2 {
+  font-size: 3rem;
+  color: #bdbdbd;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.aboutContent p {
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.readMore {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #333;
+  text-decoration: none;
+}
+
+.arrow {
+  margin-left: 0.5rem;
+}
+
+.mision h1 {
+  color: #bdbdbd;
+  font-size: 50px;
+}
+
+.points {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.point {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 30px;
+  width: 400px;
+  gap: 1.2rem;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.div1 {
+  grid-column: span 6;
+  position: relative;
+}
+
+.div2 {
+  grid-column: span 6;
+  position: relative;
+}
+
+.div3 {
+  grid-column: span 3;
+  position: relative;
+}
+
+.div4 {
+  grid-column: span 5;
+  position: relative;
+}
+
+.div5 {
+  grid-column: span 4;
+  position: relative;
+}
+
+.div1 img,
+.div2 img,
+.div3 img,
+.div4 img,
+.div5 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.parent > div {
+  position: relative;
+  overflow: hidden;
+}
+
+.parent > div::before {
+  content: "Sample Project";
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.parent > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.parent > div:hover::before,
+.parent > div:hover::after {
+  opacity: 1;
+}
+
+.parent > div:hover img {
+  transform: scale(1.05);
+}
+
+.allp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.allprojects {
+  background: black;
+  color: white;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.formContainer {
+  flex: 1;
+  max-width: 50%;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contactus button {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.contactImg {
+  flex: 1;
+  max-width: 50%;
+}
+
+.edificio {
+  position: relative;
+  width: 100%;
+  max-width: 770px;
+}
+
+.edificio img {
+  width: 100%;
+  height: auto;
+}
+
+.topImage,
+.bottomImage,
+.rightImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .title {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .aboutImages {
+    flex-direction: column;
+  }
+
+  .aboutContent {
+    padding-right: 0;
+  }
+
+  .parent {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5 {
+    grid-column: span 12;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .formContainer,
+  .contactImg {
+    max-width: 100%;
+  }
+}
